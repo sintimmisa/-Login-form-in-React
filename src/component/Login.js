@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import './myStyle.css'
 
 const Login = () => {
 
@@ -10,7 +12,7 @@ const Login = () => {
 
   return (
     <div className='container'>
-        <div className='form_container'>
+        <div className='form-container'>
             <h2>Login Form</h2>
             <form>
                 <div className='form-group'>
@@ -30,7 +32,7 @@ const Login = () => {
                     <input type='password' value={password} onChange={(e)=>setPassword(e.target.value)} />
 
                 </div>
-                <button>Login</button>
+                <button className='btn'>Login</button>
             </form>
         </div>
     </div>
